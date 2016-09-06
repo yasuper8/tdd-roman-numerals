@@ -24,6 +24,7 @@ RSpec.describe Converter do
           20 => "XX",
           40 => "XL",
           50 => "L",
+          90 => "XC",
          100 => "C",
          166 => "CLXVI",
          200 => "CC",
