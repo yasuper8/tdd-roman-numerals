@@ -5,35 +5,29 @@ class Converter
   def convert(n)
     output = ""
 
-    while n >= 1000
-      output << "D"
-      n -= 1000
-    end
+    thousands = n/1000
+    output << "M" * thousands
+    n -= 1000 * thousands
 
-    if n >= 500
-      output << "D"
-      n -= 500
-    end
+    fivehundreds = n/500
+    output << "D" * fivehundreds
+    n -= 500 * fivehundreds
 
-    while n >= 100
-      output << "C"
-      n -= 100
-    end
+    hundreds = n/100
+    output << "C" * hundreds
+    n -= 100 * hundreds
 
-    if n >= 50
-      output << "L"
-      n -= 50
-    end
+    fifties = n/50
+    output << "L" * fifties
+    n -= 50 * fifties
 
-    while n >= 10
-      output << "X"
-      n -= 10
-    end
+    tens = n/10
+    output << "X" * tens
+    n -= 10 * tens
 
-    if n >= 5
-      output << "V"
-      n -= 5
-    end
+    fives = n/5
+    output << "V" * fives
+    n -= 5 * fives
 
     output << "I" * n
   end
