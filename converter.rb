@@ -13,6 +13,10 @@ class Converter
     output << "D" * fivehundreds
     n -= 500 * fivehundreds
 
+    fourhundreds = n/400
+    output << "CD" * fourhundreds
+    n -= 400 * fourhundreds
+
     hundreds = n/100
     output << "C" * hundreds
     n -= 100 * hundreds
