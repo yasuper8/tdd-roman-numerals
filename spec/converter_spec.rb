@@ -28,6 +28,7 @@ RSpec.describe Converter do
          100 => "C",
          166 => "CLXVI",
          200 => "CC",
+         400 => "CD",
          500 => "D",
         1000 => "M",
         2000 => "MM"
