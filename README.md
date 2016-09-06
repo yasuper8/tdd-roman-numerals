@@ -15,7 +15,7 @@ cohorts: 30
 |   Use the Red, Green, Refactor pattern |
 
 
-In todays lab we will be creating a Converter that takes in a base 10 integer and returns a Roman Numeral string:
+In today's lab we will be creating a Converter that takes in a base 10 integer and returns a Roman Numeral string:
 
 | Input | Output |
 | :---- | :---- |
