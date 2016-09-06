@@ -8,8 +8,8 @@ RSpec.describe Converter do
   end
 
   describe "#convert" do
+    let(:converter){ Converter.new }
     it "converts 1 to 'I'" do
-      converter = Converter.new
       expect( converter.convert 1 ).to eq("I")
     end
   end
