@@ -29,6 +29,10 @@ class Converter
     output << "V" * fives
     n -= 5 * fives
 
+    fours = n/4
+    output << "IV" * fours
+    n -= 4 * fours
+
     output << "I" * n
   end
 end
