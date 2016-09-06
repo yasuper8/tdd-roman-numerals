@@ -5,7 +5,7 @@ class Converter
   def convert(n)
     output = ""
 
-    if n == 100
+    while n >= 100
       output << "C"
       n -= 100
     end
