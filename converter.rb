@@ -25,6 +25,10 @@ class Converter
     output << "X" * tens
     n -= 10 * tens
 
+    nines = n/9
+    output << "IX" * nines
+    n -= 9 * nines
+
     fives = n/5
     output << "V" * fives
     n -= 5 * fives
