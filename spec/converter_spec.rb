@@ -10,24 +10,26 @@ RSpec.describe Converter do
   describe "#convert" do
     let(:converter){ Converter.new }
 
-    it "converts 1 to 'I'" do
-      expect( converter.convert 1 ).to eq("I")
-    end
+    context "given valid input (positive integers 0..n)" do
+      it "converts 1 to 'I'" do
+        expect( converter.convert 1 ).to eq("I")
+      end
 
-    it "converts 2 to 'II'" do
-      expect( converter.convert 2 ).to eq("II")
-    end
+      it "converts 2 to 'II'" do
+        expect( converter.convert 2 ).to eq("II")
+      end
 
-    it "converts 5 to 'V'" do
-      expect( converter.convert 5 ).to eq("V")
-    end
+      it "converts 5 to 'V'" do
+        expect( converter.convert 5 ).to eq("V")
+      end
 
-    it "converts 6 to 'VI'" do
-      expect( converter.convert 6 ).to eq("VI")
-    end
+      it "converts 6 to 'VI'" do
+        expect( converter.convert 6 ).to eq("VI")
+      end
 
-    it "converts 10 to 'X'" do
-      expect( converter.convert 10 ).to eq("X")
+      it "converts 10 to 'X'" do
+        expect( converter.convert 10 ).to eq("X")
+      end
     end
   end
 end
