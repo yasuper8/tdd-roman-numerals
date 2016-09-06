@@ -3,6 +3,6 @@
 
 class Converter
   def convert(n)
-    "I"
+    "I" * n
   end
 end
