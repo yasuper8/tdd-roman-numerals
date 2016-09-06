@@ -5,6 +5,11 @@ class Converter
   def convert(n)
     output = ""
 
+    if n == 50
+      output << "L"
+      n -= 50
+    end
+
     while n >= 10
       output << "X"
       n -= 10
