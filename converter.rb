@@ -17,6 +17,10 @@ class Converter
     output << "C" * hundreds
     n -= 100 * hundreds
 
+    nineties = n/90
+    output << "XC" * nineties
+    n -= 90 * nineties
+
     fifties = n/50
     output << "L" * fifties
     n -= 50 * fifties
