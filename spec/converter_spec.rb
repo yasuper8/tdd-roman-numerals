@@ -30,6 +30,7 @@ RSpec.describe Converter do
          200 => "CC",
          400 => "CD",
          500 => "D",
+         900 => "CM",
         1000 => "M",
         2000 => "MM"
       }.each_pair do |i, rn|
