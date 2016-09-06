@@ -21,6 +21,10 @@ class Converter
     output << "L" * fifties
     n -= 50 * fifties
 
+    forties = n/40
+    output << "XL" * forties
+    n -= 40 * forties
+
     tens = n/10
     output << "X" * tens
     n -= 10 * tens
