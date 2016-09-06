@@ -23,7 +23,8 @@ RSpec.describe Converter do
           50 => "L",
          100 => "C",
          166 => "CLXVI",
-         200 => "CC"
+         200 => "CC",
+         500 => "D"
       }.each_pair do |i, rn|
         it "converts #{i} into #{rn}" do
           expect( converter.convert(i) ).to eq(rn)
