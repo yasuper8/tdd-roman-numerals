@@ -5,8 +5,9 @@ class Converter
   def convert(n)
     output = ""
 
-    if n == 10
-      return "X"
+    if n >= 10
+      output << "X"
+      n -= 10
     end
 
     if n >= 5
