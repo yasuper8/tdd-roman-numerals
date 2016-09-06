@@ -18,6 +18,7 @@ RSpec.describe Converter do
            4 => "IV",
            5 => "V",
            6 => "VI",
+           9 => "IX",
           10 => "X",
           11 => "XI",
           20 => "XX",
