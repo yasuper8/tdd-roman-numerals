@@ -9,8 +9,13 @@ RSpec.describe Converter do
 
   describe "#convert" do
     let(:converter){ Converter.new }
+
     it "converts 1 to 'I'" do
       expect( converter.convert 1 ).to eq("I")
+    end
+
+    it "converts 2 to 'II'" do
+      expect( converter.convert 2 ).to eq("II")
     end
   end
 end
