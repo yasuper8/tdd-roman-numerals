@@ -25,5 +25,9 @@ RSpec.describe Converter do
     it "converts 6 to 'VI'" do
       expect( converter.convert 6 ).to eq("VI")
     end
+
+    it "converts 10 to 'X'" do
+      expect( converter.convert 10 ).to eq("X")
+    end
   end
 end
