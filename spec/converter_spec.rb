@@ -30,6 +30,10 @@ RSpec.describe Converter do
       it "converts 10 to 'X'" do
         expect( converter.convert 10 ).to eq("X")
       end
+
+      it "converts 11 to 'XI'" do
+        expect( converter.convert 11 ).to eq("XI")
+      end
     end
   end
 end
