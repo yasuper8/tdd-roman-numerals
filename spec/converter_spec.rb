@@ -22,6 +22,7 @@ RSpec.describe Converter do
           20 => "XX",
           50 => "L",
          100 => "C",
+         166 => "CLXVI",
          200 => "CC"
       }.each_pair do |i, rn|
         it "converts #{i} into #{rn}" do
