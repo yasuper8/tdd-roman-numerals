@@ -10,7 +10,7 @@ class Converter
       n -= 100
     end
 
-    if n == 50
+    if n >= 50
       output << "L"
       n -= 50
     end
