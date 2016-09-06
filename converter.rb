@@ -3,7 +3,11 @@
 
 class Converter
   def convert(n)
-    return "V" if n == 5
-    "I" * n
+    output = ""
+    if n >= 5
+      output << "V"
+      n -= 5
+    end
+    output << "I" * n
   end
 end
