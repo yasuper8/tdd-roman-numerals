@@ -9,6 +9,10 @@ class Converter
     output << "M" * thousands
     n -= 1000 * thousands
 
+    ninehundreds = n/900
+    output << "CM" * ninehundreds
+    n -= 900 * ninehundreds
+
     fivehundreds = n/500
     output << "D" * fivehundreds
     n -= 500 * fivehundreds
