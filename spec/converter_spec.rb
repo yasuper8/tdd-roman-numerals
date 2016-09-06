@@ -22,6 +22,7 @@ RSpec.describe Converter do
           10 => "X",
           11 => "XI",
           20 => "XX",
+          40 => "XL",
           50 => "L",
          100 => "C",
          166 => "CLXVI",
